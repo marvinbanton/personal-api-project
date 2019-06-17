@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal API | Personal </title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="logo">
+               <img src="assets/img/logo.png" height="130" width="133" alt="Logo" >
+            </div>
+            <div id="search-form">
+                <input list="suggestions" class="searchTerm" id="searchInput" />
+                <datalist id="suggestions">
+                </datalist>
+
+                <button type="submit" id="search-btn" class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="result">
+                <div class="row">
+                    <h1 class="word" id="headword">Inevitable</h1>
+                    <h4 class="type" id="label">adjective</h4>
+                </div>
+                <div class="row">
+                    <h4 class="syllable" id="syllable">in*ev*i*ta*ble</h4>
+                    <span class="speaker" id="pronounciation"><i class="fa fa-volume-up"></i></span>
+
+                </div>
+               
+                <h3 class="title">Definition of <i id="word">inevitable</i> </h3>
+                <ul class="list" id="definition">
+                    <li class="definition" id="meaning">incapable of being avoided or evaded</li>
+                    <li class="definition" id="meaning">something that is sure to happen</li>
+                </ul>
+            </div>
+         </div>
+         
+         <div class="container"><hr class="line">
+            <h3 class="title"> Examples of <i id="sample"></i> in a Sentence</h3>
+            <div id="sentence"></div>
+         </div>
+
+         <!-- <div class="container"><hr class="line">
+            <h3 class="title"> Other words from <i id="others"></i> </h3>
+
+         </div> -->
+
+         
+    </div>
+    <audio id="pronounce" src=""></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>      
